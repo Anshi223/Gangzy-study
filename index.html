@@ -4,438 +4,595 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gangzy Study | NEET & Class 10 Study Notes</title>
+  <title>Gangzy Study | NEET & Class 10 Study Platform</title>
 
-  <meta name="description" content="Gangzy Study provides NEET Biology, Physics, Chemistry, Class 10 notes, revision resources, study tips and planners.">
+  <meta name="description"
+    content="Gangzy Study is a clean and organized study platform for NEET and Class 10 students with notes, revision resources, mock tests, MCQs and practice questions.">
 
-  <meta name="keywords" content="NEET notes, NEET Biology notes, NEET Physics notes, NEET Chemistry notes, Class 10 notes, study notes, revision notes">
+  <meta name="keywords"
+    content="NEET notes, NEET Biology, NEET Physics, NEET Chemistry, mock tests, MCQs, PYQ, Class 10 notes, study material">
 
   <meta name="author" content="Gangzy Study">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f7f9fc;
-      color: #172033;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #ffffff;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-      color: #3157d5;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      margin-left: 20px;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: #3157d5;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 70px 20px;
-      background: linear-gradient(135deg, #e9efff, #ffffff);
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-      color: #1d2b64;
-    }
-
-    .hero h1 span {
-      color: #3157d5;
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-      color: #555;
-    }
-
-    .search-box {
-      margin: 30px auto 0;
-      max-width: 600px;
-      display: flex;
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    }
-
-    .search-box input {
-      flex: 1;
-      padding: 15px;
-      border: none;
-      outline: none;
-      font-size: 16px;
-    }
-
-    .search-box button {
-      padding: 15px 22px;
-      border: none;
-      background: #3157d5;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 55px 7%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 35px;
-    }
-
-    .section-title h2 {
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .section-title p {
-      color: #666;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.07);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    }
-
-    .icon {
-      font-size: 35px;
-      margin-bottom: 12px;
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-      color: #1d2b64;
-    }
-
-    .card p {
-      color: #666;
-      font-size: 14px;
-    }
-
-    .notes {
-      background: #eef2ff;
-    }
-
-    .note-card {
-      background: white;
-      border-radius: 14px;
-      padding: 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
-    }
-
-    .note-card h3 {
-      margin-bottom: 8px;
-    }
-
-    .note-card p {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      background: #3157d5;
-      color: white;
-      padding: 9px 16px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .features {
-      background: white;
-    }
-
-    .feature {
-      text-align: center;
-    }
-
-    footer {
-      background: #172033;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    footer p {
-      margin: 5px;
-      color: #d6d9e2;
-    }
-
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav a {
-        margin: 0 7px;
-        font-size: 14px;
-      }
-
-      .hero h1 {
-        font-size: 32px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">📚 Gangzy Study</div>
+  <!-- HEADER -->
+  <header class="header">
 
-    <nav>
+    <a href="index.html" class="logo">
+      Gangzy<span>Study</span>
+    </a>
+
+    <nav class="navbar">
       <a href="#home">Home</a>
       <a href="#subjects">Subjects</a>
       <a href="#notes">Notes</a>
-      <a href="#features">Features</a>
+      <a href="#practice">Practice</a>
+      <a href="#resources">Resources</a>
     </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
   </header>
 
+
+  <!-- HERO -->
   <main>
 
     <section class="hero" id="home">
-      <h1>Welcome to <span>Gangzy Study</span></h1>
 
-      <p>
-        Simple, organized and exam-focused study resources
-        for NEET and school students.
-      </p>
+      <div class="hero-content">
+
+        <span class="hero-tag">SMART • SIMPLE • ORGANIZED</span>
+
+        <h1>
+          Study smarter with
+          <span>Gangzy Study</span>
+        </h1>
+
+        <p>
+          Notes, revision resources, mock tests and practice
+          material — organized in one place for better preparation.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#subjects" class="primary-btn">Explore Subjects</a>
+          <a href="#practice" class="secondary-btn">Start Practice</a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
 
       <div class="search-box">
+
+        <span>🔎</span>
+
         <input
           type="text"
           id="searchInput"
-          placeholder="Search Biology, Physics, Chemistry..."
+          placeholder="Search notes, chapters, MCQs..."
+          onkeyup="searchContent()"
         >
-        <button onclick="searchNotes()">Search</button>
+
       </div>
+
+      <p id="searchMessage"></p>
+
     </section>
 
 
-    <section id="subjects">
+    <!-- SUBJECTS -->
+    <section class="section" id="subjects">
 
-      <div class="section-title">
-        <h2>📖 Study Subjects</h2>
-        <p>Choose your subject and start learning.</p>
+      <div class="section-heading">
+        <span>SUBJECTS</span>
+        <h2>Choose your subject</h2>
+        <p>Find organized study material for your preparation.</p>
       </div>
 
-      <div class="cards">
 
-        <div class="card">
-          <div class="icon">🧬</div>
-          <h3>NEET Biology</h3>
-          <p>
-            Biology notes, NCERT concepts, diagrams,
-            revision notes and important topics.
-          </p>
-        </div>
+      <div class="subject-grid">
 
-        <div class="card">
-          <div class="icon">⚡</div>
-          <h3>NEET Physics</h3>
-          <p>
-            Physics concepts, formulas, numerical practice
-            and quick revision material.
-          </p>
-        </div>
+        <a href="#" class="subject-card biology">
 
-        <div class="card">
-          <div class="icon">⚗️</div>
-          <h3>NEET Chemistry</h3>
-          <p>
-            Physical, Organic and Inorganic Chemistry
-            notes and revision resources.
-          </p>
-        </div>
+          <div class="subject-icon">🧬</div>
 
-        <div class="card">
-          <div class="icon">📝</div>
-          <h3>Class 10</h3>
-          <p>
-            Class 10 study notes, revision material,
-            important questions and study resources.
-          </p>
-        </div>
+          <div>
+            <h3>NEET Biology</h3>
+            <p>NCERT notes, diagrams, revision & MCQs</p>
+          </div>
+
+          <strong>→</strong>
+
+        </a>
+
+
+        <a href="#" class="subject-card physics">
+
+          <div class="subject-icon">⚡</div>
+
+          <div>
+            <h3>NEET Physics</h3>
+            <p>Concepts, formulas, numericals & practice</p>
+          </div>
+
+          <strong>→</strong>
+
+        </a>
+
+
+        <a href="#" class="subject-card chemistry">
+
+          <div class="subject-icon">⚗️</div>
+
+          <div>
+            <h3>NEET Chemistry</h3>
+            <p>Physical, Organic & Inorganic Chemistry</p>
+          </div>
+
+          <strong>→</strong>
+
+        </a>
+
+
+        <a href="#" class="subject-card school">
+
+          <div class="subject-icon">📘</div>
+
+          <div>
+            <h3>Class 10</h3>
+            <p>Notes, revision & important questions</p>
+          </div>
+
+          <strong>→</strong>
+
+        </a>
 
       </div>
+
     </section>
 
 
-    <section class="notes" id="notes">
+    <!-- NOTES -->
+    <section class="section light-section" id="notes">
 
-      <div class="section-title">
-        <h2>✨ Latest Study Notes</h2>
-        <p>Quick revision resources for your preparation.</p>
+      <div class="section-heading">
+
+        <span>STUDY MATERIAL</span>
+
+        <h2>Notes & Revision</h2>
+
+        <p>
+          Quick and organized resources for effective revision.
+        </p>
+
       </div>
 
-      <div class="cards">
 
-        <div class="note-card">
-          <h3>🧬 Living World</h3>
-          <p>
-            Complete quick revision notes covering
-            important Biology concepts.
-          </p>
-          <a href="#" class="btn">Read Notes</a>
-        </div>
+      <div class="content-grid">
 
-        <div class="note-card">
-          <h3>🌱 Biological Classification</h3>
+        <article class="content-card searchable">
+
+          <div class="card-top">
+            <span class="category">BIOLOGY</span>
+            <span>📖</span>
+          </div>
+
+          <h3>Living World</h3>
+
           <p>
-            Easy-to-revise classification notes
+            Important concepts and quick revision notes
             for NEET Biology.
           </p>
-          <a href="#" class="btn">Read Notes</a>
-        </div>
 
-        <div class="note-card">
-          <h3>🌿 Plant Kingdom</h3>
+          <a href="#" class="read-link">Read Notes →</a>
+
+        </article>
+
+
+        <article class="content-card searchable">
+
+          <div class="card-top">
+            <span class="category">BIOLOGY</span>
+            <span>🌱</span>
+          </div>
+
+          <h3>Biological Classification</h3>
+
+          <p>
+            Classification concepts, important points
+            and revision material.
+          </p>
+
+          <a href="#" class="read-link">Read Notes →</a>
+
+        </article>
+
+
+        <article class="content-card searchable">
+
+          <div class="card-top">
+            <span class="category">BIOLOGY</span>
+            <span>🌿</span>
+          </div>
+
+          <h3>Plant Kingdom</h3>
+
           <p>
             Important groups, characteristics and
             revision points.
           </p>
-          <a href="#" class="btn">Read Notes</a>
-        </div>
 
-        <div class="note-card">
-          <h3>🐾 Animal Kingdom</h3>
+          <a href="#" class="read-link">Read Notes →</a>
+
+        </article>
+
+
+        <article class="content-card searchable">
+
+          <div class="card-top">
+            <span class="category">BIOLOGY</span>
+            <span>🐾</span>
+          </div>
+
+          <h3>Animal Kingdom</h3>
+
           <p>
-            Important characteristics and classification
+            Classification and important characteristics
             for quick revision.
           </p>
-          <a href="#" class="btn">Read Notes</a>
-        </div>
+
+          <a href="#" class="read-link">Read Notes →</a>
+
+        </article>
+
+
+        <article class="content-card searchable">
+
+          <div class="card-top">
+            <span class="category">BIOLOGY</span>
+            <span>🌸</span>
+          </div>
+
+          <h3>Morphology of Flowering Plants</h3>
+
+          <p>
+            Important structures, terms and revision
+            points for NEET.
+          </p>
+
+          <a href="#" class="read-link">Read Notes →</a>
+
+        </article>
+
+
+        <article class="content-card searchable">
+
+          <div class="card-top">
+            <span class="category">CHEMISTRY</span>
+            <span>⚗️</span>
+          </div>
+
+          <h3>Important Chemistry Notes</h3>
+
+          <p>
+            Organized concepts and revision resources
+            for Chemistry preparation.
+          </p>
+
+          <a href="#" class="read-link">Read Notes →</a>
+
+        </article>
 
       </div>
+
     </section>
 
 
-    <section id="features">
+    <!-- MOCK TEST & PRACTICE -->
+    <section class="section" id="practice">
 
-      <div class="section-title">
-        <h2>🚀 Why Gangzy Study?</h2>
-        <p>Everything organized in one place.</p>
-      </div>
+      <div class="section-heading">
 
-      <div class="cards">
+        <span>PRACTICE ZONE</span>
 
-        <div class="card feature">
-          <div class="icon">📚</div>
-          <h3>Easy Notes</h3>
-          <p>
-            Simple and organized notes for faster revision.
-          </p>
-        </div>
+        <h2>Mock Tests & Practice</h2>
 
-        <div class="card feature">
-          <div class="icon">🔎</div>
-          <h3>Easy Search</h3>
-          <p>
-            Quickly find the topic or subject you need.
-          </p>
-        </div>
-
-        <div class="card feature">
-          <div class="icon">📱</div>
-          <h3>Mobile Friendly</h3>
-          <p>
-            Study comfortably on mobile, tablet or computer.
-          </p>
-        </div>
-
-        <div class="card feature">
-          <div class="icon">⚡</div>
-          <h3>Quick Revision</h3>
-          <p>
-            Focus on important concepts before your exams.
-          </p>
-        </div>
+        <p>
+          Test your preparation with chapter-wise,
+          subject-wise and full-length practice.
+        </p>
 
       </div>
+
+
+      <div class="practice-grid">
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">🧪</div>
+
+          <h3>NEET Full Mock Tests</h3>
+
+          <p>
+            Practice complete NEET-style tests.
+          </p>
+
+          <span>Start Test →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">🧬</div>
+
+          <h3>Biology Practice</h3>
+
+          <p>
+            Biology MCQs and chapter-wise questions.
+          </p>
+
+          <span>Practice →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">⚡</div>
+
+          <h3>Physics Practice</h3>
+
+          <p>
+            Numerical and concept-based practice.
+          </p>
+
+          <span>Practice →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">⚗️</div>
+
+          <h3>Chemistry Practice</h3>
+
+          <p>
+            Physical, Organic and Inorganic MCQs.
+          </p>
+
+          <span>Practice →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">📚</div>
+
+          <h3>Chapter-wise Tests</h3>
+
+          <p>
+            Test individual chapters after studying.
+          </p>
+
+          <span>Take Test →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">🎯</div>
+
+          <h3>Topic-wise MCQs</h3>
+
+          <p>
+            Practice specific topics and concepts.
+          </p>
+
+          <span>Solve MCQs →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">🔄</div>
+
+          <h3>PYQ Practice</h3>
+
+          <p>
+            Practice previous-year questions.
+          </p>
+
+          <span>Practice PYQs →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card">
+
+          <div class="practice-icon">⏱️</div>
+
+          <h3>Timed Tests</h3>
+
+          <p>
+            Improve speed and time management.
+          </p>
+
+          <span>Start Timer →</span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- RESOURCES -->
+    <section class="section light-section" id="resources">
+
+      <div class="section-heading">
+
+        <span>RESOURCES</span>
+
+        <h2>Study Resources</h2>
+
+        <p>Build better study habits and revise effectively.</p>
+
+      </div>
+
+
+      <div class="resource-grid">
+
+        <div class="resource-card">
+
+          <span>🎯</span>
+
+          <h3>Study Tips</h3>
+
+          <p>
+            Practical strategies for focused and
+            consistent studying.
+          </p>
+
+        </div>
+
+
+        <div class="resource-card">
+
+          <span>📅</span>
+
+          <h3>Study Planners</h3>
+
+          <p>
+            Plan your daily, weekly and monthly
+            preparation.
+          </p>
+
+        </div>
+
+
+        <div class="resource-card">
+
+          <span>🔁</span>
+
+          <h3>Revision</h3>
+
+          <p>
+            Revision strategies and quick-review
+            resources.
+          </p>
+
+        </div>
+
+
+        <div class="resource-card">
+
+          <span>📌</span>
+
+          <h3>Important Topics</h3>
+
+          <p>
+            Keep important concepts and questions
+            easy to find.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features-section">
+
+      <div class="feature">
+
+        <span>📚</span>
+
+        <h3>Organized</h3>
+
+        <p>Everything arranged subject-wise.</p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <span>🔎</span>
+
+        <h3>Easy to Find</h3>
+
+        <p>Search resources quickly.</p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <span>📱</span>
+
+        <h3>Mobile Friendly</h3>
+
+        <p>Study on phone, tablet or computer.</p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <span>🚀</span>
+
+        <h3>Exam Focused</h3>
+
+        <p>Designed for efficient preparation.</p>
+
+      </div>
+
     </section>
 
   </main>
 
 
+  <!-- FOOTER -->
   <footer>
-    <h3>📚 Gangzy Study</h3>
-    <p>Learn • Revise • Improve</p>
-    <p>© 2026 Gangzy Study. All rights reserved.</p>
+
+    <div class="footer-logo">
+      Gangzy<span>Study</span>
+    </div>
+
+    <p>
+      Learn • Practice • Revise • Improve
+    </p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#notes">Notes</a>
+      <a href="#practice">Practice</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 Gangzy Study. All rights reserved.
+    </p>
+
   </footer>
 
 
-  <script>
-    function searchNotes() {
-
-      const input = document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase()
-        .trim();
-
-      if (input === "") {
-        alert("Please enter a topic to search.");
-        return;
-      }
-
-      alert(
-        "Search system will be connected with all notes soon! 🔎"
-      );
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
-</html>
+  </html>
