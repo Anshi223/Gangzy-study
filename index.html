@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gangzy Study | NEET & Class 10 Study Platform</title>
+  <title>Gangzy Study | School & Entrance Exam Preparation</title>
 
   <meta name="description"
-    content="Gangzy Study is a clean and organized study platform for NEET and Class 10 students with notes, revision resources, mock tests, MCQs and practice questions.">
+    content="Gangzy Study is an organized study platform for Class 10, Class 11, Class 12 and entrance exam preparation including NEET, CUET and B.Sc. Nursing.">
 
   <meta name="keywords"
-    content="NEET notes, NEET Biology, NEET Physics, NEET Chemistry, mock tests, MCQs, PYQ, Class 10 notes, study material">
+    content="Gangzy Study, Class 10 notes, Class 11 notes, Class 12 notes, NEET notes, CUET notes, BSc Nursing notes, Biology, Physics, Chemistry, MCQs, PYQs">
 
   <meta name="author" content="Gangzy Study">
 
@@ -22,19 +22,22 @@
   <!-- HEADER -->
   <header class="header">
 
-    <a href="index.html" class="logo">
-      Gangzy<span>Study</span>
+    <a href="#home" class="logo">
+      📚 Gangzy<span>Study</span>
     </a>
 
-    <nav class="navbar">
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="navbar" id="navbar">
       <a href="#home">Home</a>
-      <a href="#subjects">Subjects</a>
+      <a href="#school">School</a>
+      <a href="#entrance">Entrance Exams</a>
       <a href="#notes">Notes</a>
       <a href="#practice">Practice</a>
       <a href="#resources">Resources</a>
     </nav>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
   </header>
 
@@ -54,13 +57,18 @@
         </h1>
 
         <p>
-          Notes, revision resources, mock tests and practice
-          material — organized in one place for better preparation.
+          School notes, PCB preparation, entrance exam resources,
+          MCQs, PYQs and revision material — organized in one place.
         </p>
 
         <div class="hero-buttons">
-          <a href="#subjects" class="primary-btn">Explore Subjects</a>
-          <a href="#practice" class="secondary-btn">Start Practice</a>
+          <a href="#school" class="primary-btn">
+            Explore Classes
+          </a>
+
+          <a href="#entrance" class="secondary-btn">
+            Explore Exams
+          </a>
         </div>
 
       </div>
@@ -78,7 +86,7 @@
         <input
           type="text"
           id="searchInput"
-          placeholder="Search notes, chapters, MCQs..."
+          placeholder="Search chapters, subjects, exams..."
           onkeyup="searchContent()"
         >
 
@@ -89,70 +97,68 @@
     </section>
 
 
-    <!-- SUBJECTS -->
-    <section class="section" id="subjects">
+    <!-- SCHOOL -->
+    <section class="section" id="school">
 
       <div class="section-heading">
-        <span>SUBJECTS</span>
-        <h2>Choose your subject</h2>
-        <p>Find organized study material for your preparation.</p>
+
+        <span>SCHOOL PREPARATION</span>
+
+        <h2>Choose Your Class</h2>
+
+        <p>
+          Find organized study material according to your class.
+        </p>
+
       </div>
 
 
-      <div class="subject-grid">
+      <div class="class-grid">
 
-        <a href="#" class="subject-card biology">
+        <a href="#class10" class="big-card searchable">
 
-          <div class="subject-icon">🧬</div>
+          <div class="big-card-icon">📝</div>
 
-          <div>
-            <h3>NEET Biology</h3>
-            <p>NCERT notes, diagrams, revision & MCQs</p>
-          </div>
+          <h3>Class 10</h3>
 
-          <strong>→</strong>
+          <p>
+            Notes, important questions, revision and
+            school exam preparation.
+          </p>
 
-        </a>
-
-
-        <a href="#" class="subject-card physics">
-
-          <div class="subject-icon">⚡</div>
-
-          <div>
-            <h3>NEET Physics</h3>
-            <p>Concepts, formulas, numericals & practice</p>
-          </div>
-
-          <strong>→</strong>
+          <strong>Explore Class 10 →</strong>
 
         </a>
 
 
-        <a href="#" class="subject-card chemistry">
+        <a href="#class11" class="big-card searchable">
 
-          <div class="subject-icon">⚗️</div>
+          <div class="big-card-icon">📘</div>
 
-          <div>
-            <h3>NEET Chemistry</h3>
-            <p>Physical, Organic & Inorganic Chemistry</p>
-          </div>
+          <h3>Class 11</h3>
 
-          <strong>→</strong>
+          <p>
+            Biology, Physics and Chemistry notes,
+            concepts and revision.
+          </p>
+
+          <strong>Explore Class 11 →</strong>
 
         </a>
 
 
-        <a href="#" class="subject-card school">
+        <a href="#class12" class="big-card searchable">
 
-          <div class="subject-icon">📘</div>
+          <div class="big-card-icon">📕</div>
 
-          <div>
-            <h3>Class 10</h3>
-            <p>Notes, revision & important questions</p>
-          </div>
+          <h3>Class 12</h3>
 
-          <strong>→</strong>
+          <p>
+            Board-focused notes, important questions,
+            revision and PCB preparation.
+          </p>
+
+          <strong>Explore Class 12 →</strong>
 
         </a>
 
@@ -161,8 +167,334 @@
     </section>
 
 
+    <!-- CLASS 10 -->
+    <section class="section light-section" id="class10">
+
+      <div class="section-heading">
+
+        <span>CLASS 10</span>
+
+        <h2>Class 10 Study</h2>
+
+        <p>Build strong concepts and prepare effectively.</p>
+
+      </div>
+
+
+      <div class="subject-grid">
+
+        <div class="subject-card searchable">
+          <div class="subject-icon">🔬</div>
+          <div>
+            <h3>Science</h3>
+            <p>Notes, concepts and important questions.</p>
+          </div>
+          <strong>→</strong>
+        </div>
+
+
+        <div class="subject-card searchable">
+          <div class="subject-icon">📐</div>
+          <div>
+            <h3>Mathematics</h3>
+            <p>Concepts, formulas and practice.</p>
+          </div>
+          <strong>→</strong>
+        </div>
+
+
+        <div class="subject-card searchable">
+          <div class="subject-icon">🌍</div>
+          <div>
+            <h3>Social Science</h3>
+            <p>History, Geography, Civics and Economics.</p>
+          </div>
+          <strong>→</strong>
+        </div>
+
+
+        <div class="subject-card searchable">
+          <div class="subject-icon">📖</div>
+          <div>
+            <h3>Languages</h3>
+            <p>English, Hindi and revision resources.</p>
+          </div>
+          <strong>→</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CLASS 11 -->
+    <section class="section" id="class11">
+
+      <div class="section-heading">
+
+        <span>CLASS 11</span>
+
+        <h2>Class 11 PCB</h2>
+
+        <p>
+          Build your Class 11 foundation with organized study material.
+        </p>
+
+      </div>
+
+
+      <div class="subject-grid">
+
+        <div class="subject-card searchable">
+
+          <div class="subject-icon">🧬</div>
+
+          <div>
+            <h3>Biology</h3>
+            <p>NCERT concepts, diagrams and revision.</p>
+          </div>
+
+          <strong>→</strong>
+
+        </div>
+
+
+        <div class="subject-card searchable">
+
+          <div class="subject-icon">⚡</div>
+
+          <div>
+            <h3>Physics</h3>
+            <p>Concepts, formulas and numericals.</p>
+          </div>
+
+          <strong>→</strong>
+
+        </div>
+
+
+        <div class="subject-card searchable">
+
+          <div class="subject-icon">⚗️</div>
+
+          <div>
+            <h3>Chemistry</h3>
+            <p>Physical, Organic and Inorganic Chemistry.</p>
+          </div>
+
+          <strong>→</strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CLASS 12 -->
+    <section class="section light-section" id="class12">
+
+      <div class="section-heading">
+
+        <span>CLASS 12</span>
+
+        <h2>Class 12 PCB</h2>
+
+        <p>
+          Board preparation and strong foundation for entrance exams.
+        </p>
+
+      </div>
+
+
+      <div class="subject-grid">
+
+        <div class="subject-card searchable">
+
+          <div class="subject-icon">🧬</div>
+
+          <div>
+            <h3>Biology</h3>
+            <p>NCERT notes, diagrams and revision.</p>
+          </div>
+
+          <strong>→</strong>
+
+        </div>
+
+
+        <div class="subject-card searchable">
+
+          <div class="subject-icon">⚡</div>
+
+          <div>
+            <h3>Physics</h3>
+            <p>Formulas, concepts and numerical practice.</p>
+          </div>
+
+          <strong>→</strong>
+
+        </div>
+
+
+        <div class="subject-card searchable">
+
+          <div class="subject-icon">⚗️</div>
+
+          <div>
+            <h3>Chemistry</h3>
+
+            <p>
+              Physical, Organic and Inorganic Chemistry.
+            </p>
+
+          </div>
+
+          <strong>→</strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ENTRANCE EXAMS -->
+    <section class="section" id="entrance">
+
+      <div class="section-heading">
+
+        <span>ENTRANCE EXAMS</span>
+
+        <h2>Choose Your Exam</h2>
+
+        <p>
+          Prepare for different entrance exams with
+          exam-specific resources.
+        </p>
+
+      </div>
+
+
+      <div class="exam-grid">
+
+        <a href="#neet" class="exam-card searchable">
+
+          <div class="exam-icon">🎯</div>
+
+          <h3>NEET</h3>
+
+          <p>
+            Biology, Physics, Chemistry, MCQs,
+            PYQs and mock tests.
+          </p>
+
+          <span>Explore NEET →</span>
+
+        </a>
+
+
+        <a href="#cuet" class="exam-card searchable">
+
+          <div class="exam-icon">🎓</div>
+
+          <h3>CUET</h3>
+
+          <p>
+            Subject preparation, revision,
+            questions and practice.
+          </p>
+
+          <span>Explore CUET →</span>
+
+        </a>
+
+
+        <a href="#nursing" class="exam-card searchable">
+
+          <div class="exam-icon">🏥</div>
+
+          <h3>B.Sc. Nursing</h3>
+
+          <p>
+            PCB preparation, practice questions
+            and entrance-focused resources.
+          </p>
+
+          <span>Explore B.Sc. Nursing →</span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXAM DETAILS -->
+    <section class="section light-section">
+
+      <div class="exam-detail-grid">
+
+        <div id="neet" class="exam-detail searchable">
+
+          <span class="detail-icon">🎯</span>
+
+          <h3>NEET Preparation</h3>
+
+          <p>
+            Common PCB concepts plus NEET-specific
+            MCQs, PYQs and mock tests.
+          </p>
+
+          <a href="#practice" class="read-link">
+            View NEET Practice →
+          </a>
+
+        </div>
+
+
+        <div id="cuet" class="exam-detail searchable">
+
+          <span class="detail-icon">🎓</span>
+
+          <h3>CUET Preparation</h3>
+
+          <p>
+            Organized subject resources and
+            exam-focused practice.
+          </p>
+
+          <a href="#practice" class="read-link">
+            View CUET Practice →
+          </a>
+
+        </div>
+
+
+        <div id="nursing" class="exam-detail searchable">
+
+          <span class="detail-icon">🏥</span>
+
+          <h3>B.Sc. Nursing Preparation</h3>
+
+          <p>
+            PCB concepts, revision resources and
+            entrance-focused practice.
+          </p>
+
+          <a href="#practice" class="read-link">
+            View Nursing Practice →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
     <!-- NOTES -->
-    <section class="section light-section" id="notes">
+    <section class="section" id="notes">
 
       <div class="section-heading">
 
@@ -171,7 +503,8 @@
         <h2>Notes & Revision</h2>
 
         <p>
-          Quick and organized resources for effective revision.
+          Common study content that can support
+          school and entrance exam preparation.
         </p>
 
       </div>
@@ -189,11 +522,13 @@
           <h3>Living World</h3>
 
           <p>
-            Important concepts and quick revision notes
-            for NEET Biology.
+            Important concepts and quick revision
+            notes for Biology.
           </p>
 
-          <a href="#" class="read-link">Read Notes →</a>
+          <a href="#" class="read-link">
+            Read Notes →
+          </a>
 
         </article>
 
@@ -208,11 +543,13 @@
           <h3>Biological Classification</h3>
 
           <p>
-            Classification concepts, important points
-            and revision material.
+            Classification concepts and important
+            revision points.
           </p>
 
-          <a href="#" class="read-link">Read Notes →</a>
+          <a href="#" class="read-link">
+            Read Notes →
+          </a>
 
         </article>
 
@@ -228,10 +565,12 @@
 
           <p>
             Important groups, characteristics and
-            revision points.
+            revision material.
           </p>
 
-          <a href="#" class="read-link">Read Notes →</a>
+          <a href="#" class="read-link">
+            Read Notes →
+          </a>
 
         </article>
 
@@ -246,11 +585,12 @@
           <h3>Animal Kingdom</h3>
 
           <p>
-            Classification and important characteristics
-            for quick revision.
+            Classification and important characteristics.
           </p>
 
-          <a href="#" class="read-link">Read Notes →</a>
+          <a href="#" class="read-link">
+            Read Notes →
+          </a>
 
         </article>
 
@@ -265,11 +605,13 @@
           <h3>Morphology of Flowering Plants</h3>
 
           <p>
-            Important structures, terms and revision
-            points for NEET.
+            Important structures and terminology
+            for revision.
           </p>
 
-          <a href="#" class="read-link">Read Notes →</a>
+          <a href="#" class="read-link">
+            Read Notes →
+          </a>
 
         </article>
 
@@ -281,14 +623,16 @@
             <span>⚗️</span>
           </div>
 
-          <h3>Important Chemistry Notes</h3>
+          <h3>Chemistry Revision</h3>
 
           <p>
-            Organized concepts and revision resources
-            for Chemistry preparation.
+            Organized Chemistry concepts and
+            revision resources.
           </p>
 
-          <a href="#" class="read-link">Read Notes →</a>
+          <a href="#" class="read-link">
+            Read Notes →
+          </a>
 
         </article>
 
@@ -297,18 +641,17 @@
     </section>
 
 
-    <!-- MOCK TEST & PRACTICE -->
-    <section class="section" id="practice">
+    <!-- PRACTICE -->
+    <section class="section light-section" id="practice">
 
       <div class="section-heading">
 
         <span>PRACTICE ZONE</span>
 
-        <h2>Mock Tests & Practice</h2>
+        <h2>Practice & Mock Tests</h2>
 
         <p>
-          Test your preparation with chapter-wise,
-          subject-wise and full-length practice.
+          Common practice plus exam-specific preparation.
         </p>
 
       </div>
@@ -316,29 +659,15 @@
 
       <div class="practice-grid">
 
-        <a href="#" class="practice-card">
+        <a href="#" class="practice-card searchable">
 
-          <div class="practice-icon">🧪</div>
+          <div class="practice-icon">🧠</div>
 
-          <h3>NEET Full Mock Tests</h3>
-
-          <p>
-            Practice complete NEET-style tests.
-          </p>
-
-          <span>Start Test →</span>
-
-        </a>
-
-
-        <a href="#" class="practice-card">
-
-          <div class="practice-icon">🧬</div>
-
-          <h3>Biology Practice</h3>
+          <h3>Common PCB Practice</h3>
 
           <p>
-            Biology MCQs and chapter-wise questions.
+            Practice Biology, Physics and Chemistry
+            concepts common across exams.
           </p>
 
           <span>Practice →</span>
@@ -346,14 +675,44 @@
         </a>
 
 
-        <a href="#" class="practice-card">
+        <a href="#" class="practice-card searchable">
 
-          <div class="practice-icon">⚡</div>
+          <div class="practice-icon">🎯</div>
 
-          <h3>Physics Practice</h3>
+          <h3>NEET Practice</h3>
 
           <p>
-            Numerical and concept-based practice.
+            NEET-style MCQs, PYQs and chapter tests.
+          </p>
+
+          <span>Practice NEET →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card searchable">
+
+          <div class="practice-icon">🎓</div>
+
+          <h3>CUET Practice</h3>
+
+          <p>
+            CUET-focused questions and revision.
+          </p>
+
+          <span>Practice CUET →</span>
+
+        </a>
+
+
+        <a href="#" class="practice-card searchable">
+
+          <div class="practice-icon">🏥</div>
+
+          <h3>B.Sc. Nursing Practice</h3>
+
+          <p>
+            Entrance-focused PCB practice.
           </p>
 
           <span>Practice →</span>
@@ -361,29 +720,14 @@
         </a>
 
 
-        <a href="#" class="practice-card">
-
-          <div class="practice-icon">⚗️</div>
-
-          <h3>Chemistry Practice</h3>
-
-          <p>
-            Physical, Organic and Inorganic MCQs.
-          </p>
-
-          <span>Practice →</span>
-
-        </a>
-
-
-        <a href="#" class="practice-card">
+        <a href="#" class="practice-card searchable">
 
           <div class="practice-icon">📚</div>
 
           <h3>Chapter-wise Tests</h3>
 
           <p>
-            Test individual chapters after studying.
+            Test yourself after completing a chapter.
           </p>
 
           <span>Take Test →</span>
@@ -391,14 +735,14 @@
         </a>
 
 
-        <a href="#" class="practice-card">
+        <a href="#" class="practice-card searchable">
 
           <div class="practice-icon">🎯</div>
 
           <h3>Topic-wise MCQs</h3>
 
           <p>
-            Practice specific topics and concepts.
+            Practice specific concepts and topics.
           </p>
 
           <span>Solve MCQs →</span>
@@ -406,7 +750,7 @@
         </a>
 
 
-        <a href="#" class="practice-card">
+        <a href="#" class="practice-card searchable">
 
           <div class="practice-icon">🔄</div>
 
@@ -421,7 +765,7 @@
         </a>
 
 
-        <a href="#" class="practice-card">
+        <a href="#" class="practice-card searchable">
 
           <div class="practice-icon">⏱️</div>
 
@@ -431,7 +775,7 @@
             Improve speed and time management.
           </p>
 
-          <span>Start Timer →</span>
+          <span>Start Test →</span>
 
         </a>
 
@@ -441,7 +785,7 @@
 
 
     <!-- RESOURCES -->
-    <section class="section light-section" id="resources">
+    <section class="section" id="resources">
 
       <div class="section-heading">
 
@@ -449,64 +793,62 @@
 
         <h2>Study Resources</h2>
 
-        <p>Build better study habits and revise effectively.</p>
+        <p>
+          Helpful resources for better preparation.
+        </p>
 
       </div>
 
 
       <div class="resource-grid">
 
-        <div class="resource-card">
+        <div class="resource-card searchable">
 
           <span>🎯</span>
 
           <h3>Study Tips</h3>
 
           <p>
-            Practical strategies for focused and
-            consistent studying.
+            Practical strategies for focused studying.
           </p>
 
         </div>
 
 
-        <div class="resource-card">
+        <div class="resource-card searchable">
 
           <span>📅</span>
 
           <h3>Study Planners</h3>
 
           <p>
-            Plan your daily, weekly and monthly
-            preparation.
+            Daily, weekly and monthly planning.
           </p>
 
         </div>
 
 
-        <div class="resource-card">
+        <div class="resource-card searchable">
 
           <span>🔁</span>
 
           <h3>Revision</h3>
 
           <p>
-            Revision strategies and quick-review
-            resources.
+            Quick revision strategies and resources.
           </p>
 
         </div>
 
 
-        <div class="resource-card">
+        <div class="resource-card searchable">
 
           <span>📌</span>
 
           <h3>Important Topics</h3>
 
           <p>
-            Keep important concepts and questions
-            easy to find.
+            Keep important concepts easy to find.
           </p>
 
         </div>
@@ -525,7 +867,9 @@
 
         <h3>Organized</h3>
 
-        <p>Everything arranged subject-wise.</p>
+        <p>
+          School and entrance preparation separated clearly.
+        </p>
 
       </div>
 
@@ -536,7 +880,9 @@
 
         <h3>Easy to Find</h3>
 
-        <p>Search resources quickly.</p>
+        <p>
+          Search resources quickly.
+        </p>
 
       </div>
 
@@ -547,7 +893,9 @@
 
         <h3>Mobile Friendly</h3>
 
-        <p>Study on phone, tablet or computer.</p>
+        <p>
+          Study on phone, tablet or computer.
+        </p>
 
       </div>
 
@@ -556,9 +904,11 @@
 
         <span>🚀</span>
 
-        <h3>Exam Focused</h3>
+        <h3>Expandable</h3>
 
-        <p>Designed for efficient preparation.</p>
+        <p>
+          More exams and subjects can be added later.
+        </p>
 
       </div>
 
@@ -571,7 +921,7 @@
   <footer>
 
     <div class="footer-logo">
-      Gangzy<span>Study</span>
+      📚 Gangzy<span>Study</span>
     </div>
 
     <p>
@@ -579,10 +929,13 @@
     </p>
 
     <div class="footer-links">
+
       <a href="#home">Home</a>
-      <a href="#subjects">Subjects</a>
+      <a href="#school">School</a>
+      <a href="#entrance">Entrance Exams</a>
       <a href="#notes">Notes</a>
       <a href="#practice">Practice</a>
+
     </div>
 
     <p class="copyright">
@@ -595,4 +948,4 @@
   <script src="script.js"></script>
 
 </body>
-  </html>
+          </html>
